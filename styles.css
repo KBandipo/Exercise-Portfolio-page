@@ -131,6 +131,132 @@ section {
 
 /* MAIN::CAROUSEL */
 main {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.carousel {
+  background-color: #087f5b;
+  border-radius: 8px;
+  padding: 12px;
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+  padding-right: 24px;
+  transition: all 0.4s;
+}
+.carousel:hover {
+  transform: translateY(-5px);
+}
+
+.carousel-parent::before {
+  content: "";
+  display: block;
+  width: 90%;
+  padding-bottom: 90%;
+  background-color: #054c37;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.carousel-parent::after {
+  content: "";
+  display: block;
+  width: 75%;
+  padding-bottom: 75%;
+  background-color: #033324;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+img {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+.testimonial-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #e6fcf5;
+}
+.testimonial-author {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #c3fae8;
+}
+.testimonial-job {
+  font-size: 12px;
+  color: #c3fae8;
+}
+.btn {
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  border: none;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.btn--left {
+  /* In relation to parent element */
+  left: 0;
+  top: 50%;
+  /* In relation to the element */
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  /* In relation to parent element */
+  right: 0;
+  top: 50%;
+  /* In relation to the element */
+  transform: translate(50%, -50%);
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
+}
+.dots {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: #087f5b;
 }
 
 aside {

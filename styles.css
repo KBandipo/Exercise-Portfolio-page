@@ -11,14 +11,7 @@ body {
   grid-template-rows: 80px 1fr;
   height: 100vh;
   line-height: 1;
-}
-
-nav,
-menu,
-section,
-main,
-aside {
-  /* padding-top: 24px; */
+  margin: 0 auto;
 }
 
 /*NAV SECTION */

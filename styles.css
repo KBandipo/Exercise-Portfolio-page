@@ -55,6 +55,7 @@ nav {
 
 .nav-link:hover,
 .nav-link:active {
+  font-weight: bold;
 }
 
 menu {
@@ -263,5 +264,34 @@ img {
 }
 
 aside {
-  background-color: green;
+  color: #fff;
+  background-color: #054c37;
+}
+.connect-with {
+  width: 200px;
+  padding: 30px 20px 20px 20px;
+}
+.connect-with p {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.connect-list {
+  list-style: none;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-link:link,
+.about-link:visited {
+  cursor: pointer;
+  color: #fff;
+}
+.about-link:hover,
+.about-link:active {
+  text-decoration: dotted;
+  font-weight: bold;
 }

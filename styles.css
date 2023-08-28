@@ -11,6 +11,9 @@ html {
 body {
   font-family: "Inter", sans-serif;
   color: #343a40;
+}
+
+.body-container {
   display: grid;
   grid-template-columns: 8rem 1fr 1.5fr 25rem;
   grid-template-rows: 80px 1fr;
